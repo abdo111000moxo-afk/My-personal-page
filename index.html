@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عبد الرحمن برهام | مصمم ومطور مواقع احترافي</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Ambient Glowing Background Effect -->
+    <div class="ambient-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- Floating Modern Navbar -->
+    <nav>
+        <a href="#" class="logo">
+            <span class="logo-dot"></span>
+            عبد الرحمن برهام
+        </a>
+
+        <ul class="nav-menu">
+            <li><a href="#hero" class="nav-link" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+            <li><a href="#services" class="nav-link" data-ar="الخدمات" data-en="Services">الخدمات</a></li>
+            <li><a href="#portfolio" class="nav-link" data-ar="الأعمال" data-en="Portfolio">الأعمال</a></li>
+            <li><a href="#contact" class="nav-link" data-ar="التواصل" data-en="Contact">التواصل</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <button class="lang-switch-btn" onclick="toggleLanguage()">
+                <i class="fa-solid fa-globe"></i>
+                <span id="lang-label">English</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="status-badge">
+            <span class="pulse-dot"></span>
+            <span data-ar="💻 مصمم ومطور مواقع متكامل" data-en="💻 Full-Stack Web Designer & Developer">💻 مصمم ومطور مواقع متكامل</span>
+        </div>
+
+        <h1 class="hero-title">
+            <span class="text-gradient" data-ar="أهلاً بك، أنا عبد الرحمن محمد" data-en="Welcome, I'm Abdelrahman Mohamed">أهلاً بك، أنا عبد الرحمن محمد</span>
+        </h1>
+
+        <div class="hero-subtitle" data-ar="أحول الأفكار إلى مواقع تفاعلية مبهرة" data-en="Transforming Ideas Into Stunning Interactive Websites">
+            أحول الأفكار إلى مواقع تفاعلية مبهرة
+        </div>
+
+        <!-- المستطيل الأنيق للنبذة التعريفية -->
+        <div class="bio-card-wrapper">
+            <div class="bio-card">
+                <p class="bio-text" data-ar="متخصص في تصميم وتطوير واجهات المستخدم بكود نظيف، سرعة عالية، وتجاوب تام مع كافة الشاشات لمساعدة الشركات والأفراد على النمو واكتساب عملاء جدد بكفاءة عالية."
+                   data-en="Specialized in designing and developing user interfaces with clean code, ultra-fast performance, and full responsiveness across all screens to help businesses and individuals scale effectively.">
+                   متخصص في تصميم وتطوير واجهات المستخدم بكود نظيف، سرعة عالية، وتجاوب تام مع كافة الشاشات لمساعدة الشركات والأفراد على النمو واكتساب عملاء جدد بكفاءة عالية.
+                </p>
+            </div>
+        </div>
+
+        <!-- أزرار الدعوة للإجراء (CTA) -->
+        <div class="cta-group">
+            <a href="https://wa.me/201270223881" target="_blank" class="btn-action btn-whatsapp-glow">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span data-ar="تواصل عبر الواتساب" data-en="WhatsApp Contact">تواصل عبر الواتساب</span>
+            </a>
+            <a href="tel:01503034648" class="btn-action btn-primary-glow">
+                <i class="fa-solid fa-phone-volume"></i>
+                <span data-ar="اتصال مباشر" data-en="Call Directly">اتصال مباشر</span>
+            </a>
+            <button class="btn-action btn-glass" onclick="copyPhone('01503034648')">
+                <i class="fa-regular fa-copy"></i>
+                <span data-ar="نسخ الرقم" data-en="Copy Number">نسخ الرقم</span>
+            </button>
+        </div>
+
+        <!-- Stat Counter Bar -->
+        <div class="stats-container">
+            <div class="stat-item">
+                <span class="stat-number">+100%</span>
+                <span class="stat-label" data-ar="سرعة وكفاءة كود" data-en="Speed & Performance">سرعة وكفاءة كود</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label" data-ar="تصميم متجاوب بالكامل" data-en="Responsive Design">تصميم متجاوب بالكامل</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">24/7</span>
+                <span class="stat-label" data-ar="دعم وتحديث مستمر" data-en="Continuous Support">دعم وتحديث مستمر</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section-padding" id="services">
+        <div class="section-header">
+            <span class="section-tag" data-ar="ماذا أقدم؟" data-en="My Expertise">ماذا أقدم؟</span>
+            <h2 class="section-title-main" data-ar="خدماتي الاحترافية للشركات" data-en="Professional Services">خدماتي الاحترافية للشركات</h2>
+        </div>
+
+        <div class="grid-cards">
+            <div class="card-item">
+                <div class="card-icon-wrapper">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <h3 class="card-title" data-ar="تطوير واجهات الأمامية" data-en="Frontend Development">تطوير واجهات الأمامية</h3>
+                <p class="card-desc" data-ar="بناء صفحات ويب سريعة جداً وتفاعلية باستخدام أحدث تقنيات الويب HTML5, CSS3, JavaScript بمعايير احترافية." data-en="Building lightning-fast, interactive web pages using modern HTML5, CSS3, and JavaScript standards.">بناء صفحات ويب سريعة جداً وتفاعلية باستخدام أحدث تقنيات الويب HTML5, CSS3, JavaScript بمعايير احترافية.</p>
+            </div>
+
+            <div class="card-item">
+                <div class="card-icon-wrapper">
+                    <i class="fa-solid fa-compass-drafting"></i>
+                </div>
+                <h3 class="card-title" data-ar="تصميم تجربة المستخدم UI/UX" data-en="UI/UX Design">تصميم تجربة المستخدم UI/UX</h3>
+                <p class="card-desc" data-ar="ابتكار واجهات مريحة للعين، مبهجة، وسهلة الاستخدام ترفع من نسبة تحويل الزوار إلى عملاء حقيقيين." data-en="Creating modern, intuitive, and visually appealing layouts designed to maximize user engagement and conversion.">ابتكار واجهات مريحة للعين، مبهجة، وسهلة الاستخدام ترفع من نسبة تحويل الزوار إلى عملاء حقيقيين.</p>
+            </div>
+
+            <div class="card-item">
+                <div class="card-icon-wrapper">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                </div>
+                <h3 class="card-title" data-ar="التوافق التام مع الموبايل" data-en="Responsive Web Design">التوافق التام مع الموبايل</h3>
+                <p class="card-desc" data-ar="ضمان عمل موقعك بمرونة فائقة ومظهر مبهر على الموبايل، التابلت، والشاشات الضخمة بدون أي مشاكل." data-en="Ensuring flawless functionality and gorgeous layout adaptation on mobile, tablet, and desktop viewports.">ضمان عمل موقعك بمرونة فائقة ومظهر مبهر على الموبايل، التابلت، والشاشات الضخمة بدون أي مشاكل.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section-padding" id="portfolio">
+        <div class="section-header">
+            <span class="section-tag" data-ar="معرض الأعمال" data-en="My Portfolio">معرض الأعمال</span>
+            <h2 class="section-title-main" data-ar="نماذج مشاريع سابقة" data-en="Featured Projects">نماذج مشاريع سابقة</h2>
+        </div>
+
+        <div class="portfolio-grid">
+            <div class="project-card-item">
+                <div class="project-preview">
+                    <span class="project-tag" data-ar="شركة" data-en="Corporate">شركة</span>
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <div class="project-details">
+                    <h3 class="project-name" data-ar="منصة تعريفية لشركة تكنولوجيا" data-en="Tech Agency Website">منصة تعريفية لشركة تكنولوجيا</h3>
+                    <p class="project-summary" data-ar="موقع إلكتروني متعدد الصفحات مع تصميم داكن عصري وحركات تفاعلية جذابة." data-en="Multi-page corporate website featuring modern dark aesthetic and interactive micro-animations.">موقع إلكتروني متعدد الصفحات مع تصميم داكن عصري وحركات تفاعلية جذابة.</p>
+                    <div class="tech-stack">
+                        <span class="tech-chip">HTML5</span>
+                        <span class="tech-chip">CSS Grid</span>
+                        <span class="tech-chip">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card-item">
+                <div class="project-preview">
+                    <span class="project-tag" data-ar="متجر إلكتروني" data-en="E-Commerce">متجر إلكتروني</span>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+                <div class="project-details">
+                    <h3 class="project-name" data-ar="واجهة متجر تسوق عصري" data-en="E-Commerce Interface">واجهة متجر تسوق عصري</h3>
+                    <p class="project-summary" data-ar="تصميم واجهة متجر متكاملة وسلسة للتصفح، إضافة المنتجات للسلة، وإتمام الشراء." data-en="Interactive store UI optimized for intuitive product browsing and seamless cart experience.">تصميم واجهة متجر متكاملة وسلسة للتصفح، إضافة المنتجات للسلة، وإتمام الشراء.</p>
+                    <div class="tech-stack">
+                        <span class="tech-chip">UI/UX</span>
+                        <span class="tech-chip">JS App</span>
+                        <span class="tech-chip">Responsive</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card-item">
+                <div class="project-preview">
+                    <span class="project-tag" data-ar="صفحة هبوط" data-en="Landing Page">صفحة هبوط</span>
+                    <i class="fa-solid fa-rocket"></i>
+                </div>
+                <div class="project-details">
+                    <h3 class="project-name" data-ar="صفحة هبوط سريعة للتسويق" data-en="High-Converting Landing Page">صفحة هبوط سريعة للتسويق</h3>
+                    <p class="project-summary" data-ar="صفحة ترويجية مخصصة للتحويلات العالية وزيادة مبيعات المنتجات أو الخدمات." data-en="Targeted promotional page designed to maximize lead conversion and boost sales.">صفحة ترويجية مخصصة للتحويلات العالية وزيادة مبيعات المنتجات أو الخدمات.</p>
+                    <div class="tech-stack">
+                        <span class="tech-chip">Clean Code</span>
+                        <span class="tech-chip">SEO Fast</span>
+                        <span class="tech-chip">Animations</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Box Section -->
+    <section class="section-padding" id="contact">
+        <div class="contact-banner">
+            <h2 class="contact-title" data-ar="هل تبحث عن مصمم ومطور ينضم لفريقك؟" data-en="Looking for a Developer for Your Team?">هل تبحث عن مصمم ومطور ينضم لفريقك؟</h2>
+            <p class="contact-subtitle" data-ar="أنا جاهز فوراً لبدء العمل، تقديم أفضل أداء برمجي، وتحويل رؤيتكم إلى واقع رقمي مبهر." data-en="I'm ready to start immediately, deliver top-quality code, and bring your vision to life.">أنا جاهز فوراً لبدء العمل، تقديم أفضل أداء برمجي، وتحويل رؤيتكم إلى واقع رقمي مبهر.</p>
+            
+            <span class="author-fullname">عبد الرحمن محمد محمود برهام البولاقي</span>
+
+            <div class="cta-group">
+                <a href="https://wa.me/201270223881" target="_blank" class="btn-action btn-whatsapp-glow">
+                    <i class="fa-brands fa-whatsapp"></i> 01270223881
+                </a>
+                <a href="tel:01503034648" class="btn-action btn-primary-glow">
+                    <i class="fa-solid fa-phone"></i> 01503034648
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p data-ar="© 2026 جميع الحقوق محفوظة | عبد الرحمن برهام - مصمم ومطور مواقع" data-en="© 2026 All Rights Reserved | Abdelrahman Barham - Web Developer">© 2026 جميع الحقوق محفوظة | عبد الرحمن برهام - مصمم ومطور مواقع</p>
+    </footer>
+
+    <!-- Toast Component -->
+    <div class="toast" id="toast">
+        <i class="fa-solid fa-circle-check"></i>
+        <span id="toast-text">تم نسخ الرقم بنجاح!</span>
+    </div>
+
+    <!-- Main JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
